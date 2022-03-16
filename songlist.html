@@ -4,68 +4,7 @@
     <title>Song List</title>
     <h1>SongList</h1>
     <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-    <script> 
    
-   //Based on the json ajax example code. 
-
-    function makeMessage() {
-        
-        //Make an http request. 
-        var req = new XMLHttpRequest();
-
-        console.log("1: create req");
-    
-    // Step 2: Open the JSON file at remote location
-    
-        req.open("GET", "https://manpreetkaur08.github.io/json_songlist-/songlist.json", true);
-    
-        console.log("2: open success");
-    
-        //callback for http response. 
-    
-        req.onreadystatechange = function() {
-
-            console.log("3:  event");
-    
-    
-            if (req.readyState == 4 && req.status == 200) {
-    
-                //Parse data. 
-
-                console.log("5:  data is ready");
-                new_data = req.responseText;
-
-                returnHTML = new_data;
-                
-                var data = JSON.parse(new_data);
-    
-                returnHTML += "<br>"+
-
-                    data["description"];
-    
-                document.getElementById("message").innerHTML =returnHTML;
-            }
-            else if (req.readyState == 4 && req.status != 200) {
-    
-                document.getElementById("message").innerHTML = "Something went wrong.";
-    
-            }
-    
-            else if (req.readyState == 3) {
-    
-                console.log("6:  ready state 3- request received,data being sent");
-
-                document.getElementById("message").innerHTML = "Come back soon!";
-    
-            }
-    
-        }
-    
-    // Http request. 
-        req.send();
-        console.log("4 request sent");
-    }
-     </script>
         <script>
             //done with jquery similar to the example for json_get. 
 
@@ -95,9 +34,8 @@
             })
             </script>
 
-    <body onload="makeMessage()";>
+    <body>
    
-    <div id="message">Loading data</div>
 
       
     
