@@ -3,53 +3,62 @@
 <head>
     <title>Song List</title>
     <script> 
-    function loadMessages() {
-        /* Step 1: Make instance of XHR object...
-        ...to make HTTP request after page is loaded*/
-        req = new XMLHttpRequest();
-        console.log("1: created request");
+   //Based on the json ajax example code. 
 
-    // Step 2: Open the JSON file at remote location
-
-        req.open("GET", "https://manpreetkaur08.github.io/json_songlist-/songlist.json", true);
-
-        console.log("2: open success");
-
-        // Step 3: set up callback for when HTTP response is returned (i.e., you get the JSON file back)
-
-        req.onreadystatechange = function() {
-            console.log("3:  event fired");
+    function makeMessage() {
         
+        //Make an http request. 
+        var req = new XMLHttpRequest();
 
+        console.log("1: create req");
+    
+    // Step 2: Open the JSON file at remote location
+    
+        request.open("GET", "https://manpreetkaur08.github.io/json_songlist-/songlist.json", true);
+    
+        console.log("2: open success");
+    
+        //callback for http response. 
+    
+        request.onreadystatechange = function() {
+
+            console.log("3:  event");
+    
+    
             if (req.readyState == 4 && req.status == 200) {
+    
+                //Parse data. 
 
-                // Step 5: when we get all the JSON data back, parse it and use it
                 console.log("5:  data is ready");
-                theData = req.responseText;
-                returnHTML = theData;
-                data = JSON.parse(theData);
-                
-                returnHTML += "<br>"+
-                    data["description"];
+                new_data = req.responseText;
 
-                document.getElementById("messages").innerHTML =returnHTML;
+                returnHTML = new_data;
+                
+                var data = JSON.parse(new_data);
+    
+                returnHTML += "<br>"+
+
+                    data["description"];
+    
+                document.getElementById("message").innerHTML =returnHTML;
             }
             else if (req.readyState == 4 && req.status != 200) {
-
-                document.getElementById("messages").innerHTML = "Whoops, something went terribly wrong!";
-
+    
+                document.getElementById("message").innerHTML = "Something went wrong.";
+    
             }
-
+    
             else if (req.readyState == 3) {
-
+    
                 console.log("6:  ready state 3- request received,data being sent");
-                document.getElementById("messages").innerHTML = "Come back soon!";
 
+                document.getElementById("message").innerHTML = "Come back soon!";
+    
             }
-
-        }//end on readystate change
-
-    // Step 4: fire off the HTTP request
+    
+        }
+    
+    // Http request. 
         req.send();
         console.log("4 request sent");
     }
@@ -57,10 +66,9 @@
     
 </head>
 
-    <body onload="loadMessages()">
-    
+    <body onload="makeMessage()">
     	<h1>SongList</h1>
-    	<div id="messages">Loading...</div>
+    	<div id="message">Loading</div>
     
 </body>
 </html>
