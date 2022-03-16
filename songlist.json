@@ -3,7 +3,7 @@
 	"Artist": "Bruno Mars",
 	"Title": "24K Magic",
 	"Music Genres": ["Contemporary", "Funk"],    
-        "Year": 2016
+    	"Year": 2016
 },
 
     {
@@ -15,8 +15,8 @@
 
     {
     "Artist": "Spice Girls",
-    "Title": "Wannabe",
-    "Music Genres":["Pop", "Dance"], 
+     "Title": "Wannabe",
+     "Music Genres":["Pop", "Dance"], 
     "Year": 1996	
 },
 
@@ -24,14 +24,14 @@
     "Artist": "Christina Perri",
      "Title": "A Thousand Years",
      "Music Genres": ["Pop", "Traditional"],
-    "Year": 2011,
+    "Year": 2011
 },
 
     {
     "Artist": "The Beatles",
     "Title": "Here Comes the Sun",
-    "Music Genres": ["Rock", "Traditional"],
-    "Year": 1969, 	
+     "Music Genres": ["Rock", "Traditional"],
+    "Year": 1969 	
 },
 
     {
@@ -49,10 +49,10 @@
 },
 
     {
-     "Artist": "Daft Punk",
-     "Title": "Get Lucky",
-     "Music Genres": ["Pop", "Contemporary"],
-     "Year": 2013 
+    "Artist": "Daft Punk",
+    "Title": "Get Lucky",
+    "Music Genres": ["Pop", "Contemporary"],
+    "Year": 2013 
 },
 
     {
@@ -66,7 +66,7 @@
     "Artist": "Avicii",
      "Title": "Wake Me Up",
      "Music Genres": ["Electronic Dance", "Contemporary"], 
-    "Year": 2013,   
+    "Year": 2013
 }
 
 ]
