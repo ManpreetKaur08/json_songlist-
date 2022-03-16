@@ -12,15 +12,15 @@
 
         console.log("1: create req");
     
-    // Open the JSON file on Github 
+    // Step 2: Open the JSON file at remote location
     
-        request.open("GET", "https://manpreetkaur08.github.io/json_songlist-/songlist.json", true);
+        req.open("GET", "https://manpreetkaur08.github.io/json_songlist-/songlist.json", true);
     
         console.log("2: open success");
     
         //callback for http response. 
     
-        request.onreadystatechange = function() {
+        req.onreadystatechange = function() {
 
             console.log("3:  event");
     
@@ -68,7 +68,7 @@
 
     <body onload="makeMessage()">
     	<h1>SongList</h1>
-    	<div id="message">Loading</div>
+    	<div id="message">Loading data</div>
     
 </body>
 </html>
