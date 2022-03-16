@@ -1,0 +1,73 @@
+[
+	{
+	"Artist": "Bruno Mars",
+	"Title": "24K Magic",
+	"Music Genres": ["Contemporary", "Funk"],    
+    "Year": 2016
+},
+
+    {
+    "Artist": "Journey",
+	"Title": "Anyway You Want It",
+    "Music Genres": ["Rock", "Alternative"],
+    "Year": 1980
+},
+
+    {
+    "Artist": "Spice Girls",
+	"Title": "Wannabe",
+	"Music Genres":["Pop", "Dance"], 
+    "Year": 1996	
+},
+
+    {
+    "Artist": "Christina Perri",
+	"Title": "A Thousand Years",
+	"Music Genres": ["Pop", "Traditional"],
+    "Year": 2011,
+},
+
+    {
+    "Artist": "The Beatles",
+	"Title": "Here Comes the Sun",
+	"Music Genres": ["Rock", "Traditional"],
+    "Year": 1969, 	
+},
+
+    {
+    "Artist": "Stevie Wonder",
+	"Title": "Signed Sealed Delivered",
+	"Music Genres": ["Soul", "R'n'B"], 
+    "Year": 1970
+},
+
+    {
+    "Artist":"James Brown",
+	"Title": "I Feel Good",
+	"Music Genres": ["Soul", "Funk"],
+    "Year": 1965	
+},
+
+    {
+    "Artist": "Daft Punk",
+	"Title": "Get Lucky",
+    
+	"Music Genres": ["Pop", "Contemporary"],
+    "Year": 2013 
+},
+
+    {
+    "Artist": "Beyonce",
+	"Title": "Love on Top",
+	"Music Genres": ["R'n'B", "Contemporary"],
+    "Year": 2011   
+},
+
+    {
+    "Artist": "Avicii",
+	"Title": "Wake Me Up",
+	"Music Genres": ["Electronic Dance", "Contemporary"], 
+    "Year": 2013,   
+}
+
+]
