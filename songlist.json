@@ -1,0 +1,110 @@
+[
+	{
+	"Artist": "Bruno Mars",
+	"Title": "24K Magic",
+    "Year": 2016,
+	"Music Genres": {    
+        "Primary": "Contemporary",
+        "Secondary": "Funk"       
+    }    
+},
+
+{
+    "Artist": "Journey",
+	"Title": "Anyway You Want It",
+    "Year": 1980,
+	"Music Genres": {
+        "Primary": "Rock",
+        "Secondary": "Alternative"               
+    }
+},
+
+{
+    "Artist": "Spice Girls",
+	"Title": "Wannabe",
+    "Year": 1996,
+	"Music Genres": {
+        
+        "Primary": "Pop",
+        "Secondary": "Dance"     
+    }	
+},
+
+{
+    "Artist": "Christina Perri",
+	"Title": "A Thousand Years",
+    "Year": 2011,
+	"Music Genres": {
+        "Primary": "Traditional",
+        "Secondary": "Pop"
+        
+    }	
+},
+
+{
+    "Artist": "The Beatles",
+	"Title": "Here Comes the Sun",
+    "Year": 1969, 
+	"Music Genres": {
+        "Primary": "Rock",
+        "Secondary": "Traditional"
+            
+    }	
+},
+
+{
+    "Artist": "Stevie Wonder",
+	"Title": "Signed Sealed Delivered",
+    	"Year": 1970,
+	"Music Genres": {
+        "Primary": "Soul",
+        "Secondary": "R'n'B"
+        
+    }
+},
+
+{
+    "Artist":"James Brown",
+	"Title": "I Feel Good",
+    "Year": 1965,
+	"Music Genres": {
+        "Primary": "Soul",
+        "Secondary": "Funk"
+        
+    }	
+},
+
+{
+    "Artist": "Daft Punk",
+	"Title": "Get Lucky",
+    "Year": 2013,
+	"Music Genres": {
+        "Primary": "Pop",
+        "Secondary": "Contemporary" 
+        
+    }    
+},
+
+{
+    "Artist": "Beyonce",
+	"Title": "Love on Top",
+    "Year": 2011, 
+	"Music Genres": {
+        "Primary": "R'n'B",
+        "Secondary": "Contemporary"
+        
+    }    
+},
+
+{
+    "Artist": "Avicii",
+	"Title": "Wake Me Up",
+    "Year": 2013,
+	"Music Genres": {
+        "Primary": "Electronic Dance",
+        "Secondary": "Contemporary"
+        
+    }    
+},
+
+]
