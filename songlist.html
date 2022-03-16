@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Song List</title>
+    <script> 
+    function loadMessages() {
+        /* Step 1: Make instance of XHR object...
+        ...to make HTTP request after page is loaded*/
+        req = new XMLHttpRequest();
+        console.log("1: created request");
+
+    // Step 2: Open the JSON file at remote location
+
+        req.open("GET", "https://manpreetkaur08.github.io/json_songlist-/songlist.json", true);
+
+        console.log("2: open success");
+
+        // Step 3: set up callback for when HTTP response is returned (i.e., you get the JSON file back)
+
+        req.onreadystatechange = function() {
+            console.log("3:  event fired");
+        
+
+            if (req.readyState == 4 && req.status == 200) {
+
+                // Step 5: when we get all the JSON data back, parse it and use it
+                console.log("5:  data is ready");
+                theData = req.responseText;
+                returnHTML = theData;
+                data = JSON.parse(theData);
+                
+                returnHTML += "<br>"+
+                    data["description"];
+
+                document.getElementById("messages").innerHTML =returnHTML;
+            }
+            else if (req.readyState == 4 && req.status != 200) {
+
+                document.getElementById("messages").innerHTML = "Whoops, something went terribly wrong!";
+
+            }
+
+            else if (req.readyState == 3) {
+
+                console.log("6:  ready state 3- request received,data being sent");
+                document.getElementById("messages").innerHTML = "Come back soon!";
+
+            }
+
+        }//end on readystate change
+
+    // Step 4: fire off the HTTP request
+        req.send();
+        console.log("4 request sent");
+    }
+</script>
+    
+</head>
+
+    <body onload="loadMessages()">
+    
+    	<h1>SongList</h1>
+    	<div id="messages">Loading...</div>
+    
+</body>
+</html>
+
