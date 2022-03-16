@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>Form Filter SongList</title>
+
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+
+<script>
+
+//This does not work as intended, there is extra, used information that is repeated code
+// and does not filter correctly. 
+
+function showInformation(){
+
+  $.get( "https://manpreetkaur08.github.io/json_songlist-/songlist.json",
+ 
+
+function(data) {
+  
+
+ var string = JSON.stringify(data);
+
+document.write(string + "<br/>");
+
+
+stringHTML= "<ul>";
+
+data.forEach(function(songlist) { 
+
+stringHTML += "<li>" + "<br/>" 
+      + songlist.Title + "<br/>";
+     
+  }) 
+stringHTML += "</ul>";
+
+"<br/>"
+document.write (stringHTML); 
+
+})
+}
+
+      
+</script>
+
+</head>
+    <body>
+      <div>
+            <select id="genres">
+
+            <option value="Filter">Filter</option>
+            <option value = "">Contemporary</option>
+            <option value = "Rock">Rock</option>
+            <option value = "">R'n'B</option>
+            <option value = "">Electronic Dance</option>
+            <option value = "">Pop</option>
+            <option value = "">Alternative</option>
+            <option value = "">Funk</option>
+            <option value = "">Soul</option>
+            <option value = "">Traditional</option>
+
+ 
+        </select>
+
+        <button onclick="showInformation();" >Submit</button>
+      </div>
+
+        </select>
+    
+
+    </body>
+
+
+    </html>
+
